@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q4 Seatwork 1</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e8e5d6;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .box {
+            background: #5f6f92;
+            padding: 40px;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 450px;
+            color: white;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .box h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .box p {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+            opacity: 0.9;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 0.95em;
+        }
+
+        input {
+            padding: 12px 15px;
+            width: 100%;
+            border: 2px solid #7a8ba8;
+            border-radius: 8px;
+            font-size: 1em;
+            background-color: rgba(255, 255, 255, 0.95);
+            color: #333;
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #779c4d;
+            background-color: white;
+            box-shadow: 0 0 0 3px rgba(119, 156, 77, 0.1);
+        }
+
+        input::placeholder {
+            color: #999;
+        }
+
+        button {
+            width: 100%;
+            background: #779c4d;
+            border: none;
+            padding: 12px 15px;
+            border-radius: 8px;
+            color: white;
+            font-size: 1.05em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #659940;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(119, 156, 77, 0.3);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .error {
+            color: #ff6b6b;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <form>
+        <h2>Log In</h2>
+        <p>Please enter your account details</p>
+        
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" id="user" placeholder="Enter your username">
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" id="pass" placeholder="Enter your password">
+        </div>
+
+        <button type="button" onclick="log_in()">Log In</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
